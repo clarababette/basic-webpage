@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <title>My Grid Webpage</title>
+
+<style>
+  body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  background-color: #F6F1F3;
+
+}
+
+/* ROOT FONT STYLES */
+
+* {
+  font-family: sans-serif;
+  font-weight: 100;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 3vw;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-family: 'Reenie Beanie', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #D0AA76;
+            font-size: 10vw;
+            text-align: center;
+            line-height: 0;
+            font-weight: 600;
+}
+
+h2 {
+  font-family: 'Reenie Beanie', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #7A6A6D;
+            font-size: 7vw;
+            text-align: left;
+            line-height: 0;
+            margin: 0;
+            margin-bottom: 3vw;
+            margin-top: 5vw;
+            font-weight: 600;
+}
+
+h3 {
+  font-weight: 200;
+            font-size: 3.5vw;
+            line-height: 1.3;
+            color: #818589;
+            margin: 0;
+}
+
+
+p {
+  text-align: justify;
+}
+table {
+      
+           background-color: #ECDCDE;
+           width: 100%;
+           
+       }
+       td {
+        border: 1px solid #F6F1F3;
+        padding-left: 2px;
+       }
+
+       .table-header {
+           font-weight: 500;
+       }
+
+       img {
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 10%;
+}
+
+li {
+  margin-bottom: 1.5vw;
+}
+/* POSITIONING */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+#language {
+  margin-bottom: 2vw;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+ /* .container {
+    width: 80%;
+  } */
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+
+  h1 {
+              font-size: 7vw;
+          }
+          h2 {
+              font-size: 4vw;
+              line-height: 1;
+              margin: 0;
+          }
+
+h3 {
+              font-size: 2vw;
+              margin-top: 0.5vw;
+              margin-bottom: 1vw;
+          }
+
+* {
+  font-size: 1.5vw;
+}
+
+ 
+
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  /*.container {
+    width: 75%;
+    max-width: 60rem;
+  } */
+  
+
+</style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="col-7 col-12-sm"><h1>Clara Coetzee</h1></div>
+        <div class="col-3-sm"></div>
+        <div class="col-3 col-6-sm"><img src="clara-tmountain.JPG" alt="Clara Coetzee in front of Table Mountain" id="me_pic"></div>
+        <div class="col-2"></div>
+    </div>
+
+    <div id="dream-city" class="row">
+        <div class="col-12"><h2>Dream Destination</h2></div>
+        <div class="col-6">
+        <p class="city_info">Dream City exists for about a month each (non-pandemic) year. It is a collection 
+            of camps at the Roskilde music festival in Denmark. It is run as a collective where you take 
+            responsibility for each other and the environment. It is also the only camping area at the festival in which you  
+            can build your own structure. </p>
+        <p class="city_info">As building things and music are high up on the list of things I love, I think Dream City would 
+             be a pretty great place to be.</p>
+       </div>
+       <div class="col-6"><img src="dream-city-roskilde.jpg" alt="Dream City at Roskilde Festival" id="city_pic"></div>
+    </div>
+
+    <div id="language" class="row">
+      <div class="col-12-sm">
+        <h2>A Useful Foreign Language</h2>
+        <p>Learning a language can be a long and tedious process. If I were to learn a foreign language, I would choose 
+            the language based on how useful it would be and how quickly I could reach a conversational level. And so… I would 
+            like to learn German. </p>
+        <p>According to the WEF Power Language Index, German is the seventh most useful language. English, being the global 
+            lingua franca, is of course ranked first.</p>   
+        <p>You may wonder why I would choose to learn the seventh most useful language. I have previously ventured into the 
+            world of Romance languages with dubious success and so maybe I should stick with Germanic languages. For now…</p>
+        <table>
+            <tr>
+                <td class="table-header">English Phrase</td>
+                <td class="table-header">German Phrase</td>
+            </tr>
+            <tr>
+                <td>Good morning</td>
+                <td>Guten Tag</td>
+            </tr>
+            <tr>
+                <td>Do you speak English?</td>
+                <td>Sprechen Sie Englisch?</td>
+            </tr>
+            <tr>
+                <td>Sorry, I don’t understand</td>
+                <td>Es tut mir leid, ich verstehe das nicht</td>
+            </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="historical-places" class="row">
+        <div class="col-12">
+          <h2>Historical Places in Cape Town</h2>
+        </div>
+      <div class="col-4">
+          <div class="col-12"><h3>District 6 Museum</h3></div>
+          <div class="col-12 col-6-sm">
+            <img src="clara-district6.jpg" alt="District 6 museum in Cape Town" class="place_pic"> 
+          </div>
+          <div class="col-12 col-6-sm">
+            <ul>
+              <li>If you arrange ahead, you can walk through the museum with a former resident.</li>
+              <li>The museum has a large audio archive containing recording of area's oral history.</li>
+              <li>Much of the museum's work takes place within the community and is not bound by the building.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="col-12"><h3>Parliament of RSA</h3></div>
+          <div class="col-12 col-6-sm">
+            <ul>
+              <li>The Artworks Office of Parliament is responsible for the maintance of almost 4000 artistic and heritage items.</li>
+              <li>Although currently suspended due to the pandemic, you are able to observe both National Assembly and National Council of Provences debates from the public gallery.</li>
+              <li>The President is not a member of Parliament and does not have a vote in the National Assembly.</li>
+            </ul>
+          </div>
+        <div class="col-12 col-6-sm">
+          <img src="clara-parliament.jpg" alt="Parliament in Cape Town" class="place_pic"> 
+        </div>
+      </div>
+      
+        <div class="col-4">
+          <div class="col-12"><h3>Iziko Museum</h3></div>
+          <div class="col-12 col-6-sm">
+            <img src="clara-iziko.jpg" alt="Iziko Museum in Cape Town" class="place_pic"> 
+          </div>
+          <div class="col-12 col-6-sm">
+            <ul>
+              <li>The museum is home to more than one and a half million scientific specimens.</li>
+              <li>After visiting the museum you can catch a show at the Planetarium next door.</li>
+              <li>The scientists that work at the museum can be called upon as expert witnesses in legal cases.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
