@@ -87,7 +87,7 @@ table {
 ul {
   padding: 0;
   margin: 0;
-  margin-left: 10%;
+  list-style-position: inside;
 }
 
 li {
@@ -115,6 +115,16 @@ li {
 
 #language {
   margin-bottom: 2vw;
+}
+
+.place-pic {
+    float: left;
+    margin-right: 15px;
+}
+
+.reversed {
+  float: right;
+  margin-left: 20px;
 }
 
 /* ==== GRID SYSTEM ==== */
@@ -371,10 +381,10 @@ h3 {
         </div>
       <div class="col-4">
           <div class="col-12"><h3>District 6 Museum</h3></div>
-          <div class="col-4 col-6-sm">
-            <img src="clara-district6.jpg" alt="District 6 museum in Cape Town" class="place_pic"> 
+          <div class=" place-pic col-4 col-6-sm ">
+            <img src="clara-district6.jpg" alt="District 6 museum in Cape Town" class=""> 
           </div>
-          <div class="col-8 col-6-sm">
+          <div class="">
             <ul>
               <li>If you arrange ahead, you can walk through the museum with a former resident.</li>
               <li>The museum has a large audio archive containing recording of area's oral history.</li>
@@ -385,11 +395,13 @@ h3 {
 
         <div class="col-4">
           <div class="col-12"><h3>Parliament of RSA</h3></div>
-          <div class="col-4 hidden-sm">
+          <div class=" place-pic col-4 hidden-sm">
             <img src="clara-parliament.jpg" alt="Parliament in Cape Town" class="place_pic">
           </div>
-          
-          <div class="col-8 col-6-sm">
+          <div class="reversed col-4 col-6-sm hidden-lrg ">
+          <img src="clara-parliament.jpg" alt="Parliament in Cape Town" class="place_pic"> 
+        </div>
+          <div class="">
              
             <ul>
               <li>The Artworks Office of Parliament is responsible for the maintance of almost 4000 artistic and heritage items.</li>
@@ -397,17 +409,15 @@ h3 {
               <li>The President is not a member of Parliament and does not have a vote in the National Assembly.</li>
             </ul>
           </div>
-        <div class="col-4 col-6-sm hidden-lrg">
-          <img src="clara-parliament.jpg" alt="Parliament in Cape Town" class="place_pic"> 
-        </div>
+        
       </div>
       
         <div class="col-4">
           <div class="col-12"><h3>Iziko Museum</h3></div>
-          <div class="col-4 col-6-sm">
+          <div class="place-pic col-4 col-6-sm">
             <img src="clara-iziko.jpg" alt="Iziko Museum in Cape Town" class="place_pic"> 
           </div>
-          <div class="col-8 col-6-sm">
+          <div class="">
             <ul>
               <li>The museum is home to more than one and a half million scientific specimens.</li>
               <li>After visiting the museum you can catch a show at the Planetarium next door.</li>
