@@ -232,6 +232,7 @@ h3 {
               font-size: 1.8vw;
               margin-top: 0.5vw;
               margin-bottom: 1vw;
+              text-align: center;
           }
 
 * {
@@ -292,7 +293,13 @@ h3 {
     display: block;
   }
 }
+  .hidden-lrg {
+    display: none;
+  }
 
+  #historical-places {
+    font-size: 1.1vw;
+  }
 @media only screen and (min-width: 60em) { /* 960px */
   /*.container {
     width: 75%;
@@ -377,14 +384,19 @@ h3 {
 
         <div class="col-4">
           <div class="col-12"><h3>Parliament of RSA</h3></div>
+          <div class="col-4 hidden-sm">
+            <img src="clara-parliament.jpg" alt="Parliament in Cape Town" class="place_pic">
+          </div>
+          
           <div class="col-8 col-6-sm">
+             
             <ul>
               <li>The Artworks Office of Parliament is responsible for the maintance of almost 4000 artistic and heritage items.</li>
               <li>Although currently suspended due to the pandemic, you are able to observe both National Assembly and National Council of Provences debates from the public gallery.</li>
               <li>The President is not a member of Parliament and does not have a vote in the National Assembly.</li>
             </ul>
           </div>
-        <div class="col-4 col-6-sm">
+        <div class="col-4 col-6-sm hidden-lrg">
           <img src="clara-parliament.jpg" alt="Parliament in Cape Town" class="place_pic"> 
         </div>
       </div>

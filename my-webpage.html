@@ -81,6 +81,10 @@
            justify-items: center;
        }
 
+       #swapped {
+           flex-direction: row-reverse;
+       }
+
        ul {
            width: 40vw;
            margin-left: 6vw;
@@ -111,6 +115,8 @@
            font-weight: 500;
        }
 
+
+
        @media (min-width:800px) {
           body {
               font-size: 1.3vw;
@@ -133,6 +139,7 @@
               margin-top: 0.5vw;
               margin-bottom: 1vw;
               word-wrap: normal;
+              text-align: center;
           }
           #me {
               display: flex;
@@ -152,11 +159,11 @@
           }
           #city_pic {
               margin: 0;
-              width: 30vw;
+              width: 25vw;
               vertical-align: middle;
           }
           .city_info {
-              width: 55vw;
+              width: 60vw;
           }
 
           
@@ -164,13 +171,14 @@
             display: flex;
               justify-content: space-between;
               align-items: top;
+              font-size: 1.1vw;
           }
           .place {
-              width: 30vw;
+              width: 33vw;
           }
           .hist {
               display:flex;
-              flex-direction: row;
+              flex-direction: row-reverse;
               vertical-align: top;
               width: 100%;
               margin: 0;
@@ -180,21 +188,24 @@
           }
 
           .place_pic {
-              width: 30%;
+              width: 25%;
               margin-left: 0;
               margin-right: 0;
           }
 
           ul {
-              width: 50%;
-              margin-left: 5%;
+              width: 75%;
+              margin-left: 15px;
+              margin-right: 0;
           }
           li {
               margin: 0.75vw;
+              margin-top: 0;
           }
 
           #top_list {
               margin-top: 0;
+        
           }
 
 
@@ -267,13 +278,14 @@
         </div>
         <div class="place">
         <h3>Parliament of the Republic of RSA</h3>
-        <article class="hist"> 
-            <ul id="top_list">
+        <article id="swapped" class="hist"> 
+            <img src="clara-parliament.jpg" alt="Parliament in Cape Town" class="place_pic"> 
+            <ul>
                 <li>The Artworks Office of Parliament is responsible for the maintance of almost 4000 artistic and heritage items.</li>
                 <li>Although currently suspended due to the pandemic, you are able to observe both National Assembly and National Council of Provences debates from the public gallery.</li>
                 <li>The President is not a member of Parliament and does not have a vote in the National Assembly.</li>
             </ul>
-            <img src="clara-parliament.jpg" alt="Parliament in Cape Town" class="place_pic"> 
+            
         </article>
         </div>
         <div class="place">

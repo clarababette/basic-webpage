@@ -10,15 +10,36 @@
         body {
             background-color: #D0AA76;
         }
-        button {
+        h1 {
+        font-family: 'Reenie Beanie', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color: #353339;
-            background-color: #F6F1F3;
-            border: solid #ECDCDE;
+            font-size: 3vw;
+            text-align: center;
+            line-height: 0.5;
         }
+
+        button {
+            width: 25vw;
+            border: none;
+            background: none;
+        }
+
+        .page-buttons {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
     </style>
 </head>
 <body>
-    <button onclick="document.location='my-webpage.html'">My Webpage</button>
-    <button onclick="document.location='my-webpage-grid.html'">My Webpage using Simple Grid</button>
+    <h1>Clara Coetzee</h1>
+    <h1>Basic Webpage Project</h1>
+    <h1>codeX March 2021</h1>
+    <div class="page-buttons">
+    <button onclick="document.location='my-webpage.html'"><img src="box-button.svg"/></button>
+    <button onclick="document.location='my-webpage-grid.html'"><img src="grid-button.svg"/></button>
+    </div>
+    
 </body>
 </html>

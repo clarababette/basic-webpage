@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1280 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:50;">
+    <path d="M1256.04,172.499C1256.04,92.586 1191.16,27.707 1111.25,27.707L165.408,27.707C85.496,27.707 20.617,92.586 20.617,172.499L20.617,549.912C20.617,629.824 85.496,694.703 165.408,694.703L1111.25,694.703C1191.16,694.703 1256.04,629.824 1256.04,549.912L1256.04,172.499Z" style="fill:rgb(234,208,218);stroke:rgb(212,146,173);stroke-width:13px;"/>
+    <g transform="matrix(1,0,0,1,-80.9843,18.7031)">
+        <text x="429.8px" y="182.593px" style="font-family:'ReenieBeanie', 'Reenie Beanie';font-weight:500;font-size:144px;fill:rgb(53,51,57);">My Webpage</text>
+        <text x="406.832px" y="326.593px" style="font-family:'ReenieBeanie', 'Reenie Beanie';font-weight:500;font-size:144px;fill:rgb(53,51,57);">(Simple Grid)</text>
+    </g>
+    <path d="M548.374,439.879L728.281,439.879" style="fill:none;stroke:rgb(212,146,173);stroke-width:13px;stroke-miterlimit:1;"/>
+    <g transform="matrix(1,0,0,1,0,12.6981)">
+        <path d="M548.374,481.3L728.281,481.3" style="fill:none;stroke:rgb(212,146,173);stroke-width:13px;stroke-miterlimit:1;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,8.15622)">
+        <path d="M548.374,539.961L728.281,541.311" style="fill:none;stroke:rgb(212,146,173);stroke-width:13px;stroke-miterlimit:1;"/>
+    </g>
+    <path d="M548.374,603.586L726.609,603.586" style="fill:none;stroke:rgb(212,146,173);stroke-width:13px;stroke-miterlimit:1;"/>
+    <path d="M582.258,398.458L582.258,625.082" style="fill:none;stroke:rgb(212,146,173);stroke-width:13px;stroke-miterlimit:1;"/>
+    <g transform="matrix(1,0,0,1,4.33555,0)">
+        <path d="M616.142,398.458L618.612,625.082" style="fill:none;stroke:rgb(212,146,173);stroke-width:13px;stroke-miterlimit:1;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-0.348205,0)">
+        <path d="M664.15,398.458L661.515,625.082" style="fill:none;stroke:rgb(212,146,173);stroke-width:13px;stroke-miterlimit:1;"/>
+    </g>
+    <path d="M702.869,398.458L702.022,625.082" style="fill:none;stroke:rgb(212,146,173);stroke-width:13px;stroke-miterlimit:1;"/>
+</svg>
